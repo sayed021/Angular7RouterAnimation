@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                <li class="p-2"><a role="button" class="btn btn-primary" routerLinkActive="disabled" routerLink="home">Home</a></li>
+                <li class="p-2"><a role="button" class="btn btn-primary" routerLinkActive="disabled" routerLink="about">About</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row align-items-center justify-content-center">
+        <div class="col-6">
+            <main [@zoomInOutAnimation]="getRouterOutletState(o)">
+              <router-outlet #o="outlet"></router-outlet>
+            </main>
+        </div>
+    </div>
+</div>
